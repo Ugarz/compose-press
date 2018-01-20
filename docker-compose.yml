@@ -18,7 +18,7 @@ services:
      ports:
        - "8000:80"
      volumes:
-       - /Users/Ugo/dev/compose-press/wordpress:/var/www/html  # Theme development
+       - /Users/Ugo/dev/compose-press/www:/var/www/html  # Theme development
        - /Users/Ugo/dev/compose-press/themes/:/var/www/html/wp-content/themes
      restart: always
      environment:
