@@ -66,4 +66,4 @@ rm -rf wordpress/*
 is_installed $customVersion
 # getWordpress $customVersion
 
-echo "---- Script under GNU GPL is written by Ugo Arzur ---"
+echo "---- Script under GNU GPL is written by Ugo Arzur"
