@@ -6,10 +6,10 @@ services:
       - /Users/Ugo/dev/compose-press/db:/var/lib/mysql
      restart: always
      environment:
-       MYSQL_ROOT_PASSWORD: wordpress
+       MYSQL_ROOT_PASSWORD: admin
        MYSQL_DATABASE: wordpress
-       MYSQL_USER: crevette
-       MYSQL_PASSWORD: rose
+       MYSQL_USER: mysql_user
+       MYSQL_PASSWORD: mysql_password
 
    wordpress:
      depends_on:
@@ -29,8 +29,8 @@ services:
      image: phpmyadmin/phpmyadmin
      environment:
        MYSQL_ROOT_PASSWORD: admin
-       MYSQL_USER: crevette
-       MYSQL_PASSWORD: rose
+       MYSQL_USER: mysql_user
+       MYSQL_PASSWORD: mysql_password
      ports:
        - 8080:80
 
