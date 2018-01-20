@@ -1,0 +1,13 @@
+
+node_modules/
+*-log
+*.log
+**/*.DS_Store
+**/*.zip
+*.tar.gz
+
+db/
+**/*.sql
+
+themes/crevette/
+wordpress/
